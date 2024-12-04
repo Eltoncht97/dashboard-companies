@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { CardSummary } from "./components/CardSummarry/CardSummary";
 import { BookOpenCheck, UserRound, Waypoints } from "lucide-react";
+import { LastCustomers } from "./components/LastCustomers";
 
 export const dataCardSummary = [
   {
@@ -42,6 +43,10 @@ export default function Home() {
             tooltipText={tooltipText}
           />
         ))}
+      </div>
+      <div className="grid grid-cols-1 mt-12 xl:grid-cols-2 md:gap-x-10">
+        <LastCustomers />
+        <p>Sales Distributors</p>
       </div>
     </div>
   );
