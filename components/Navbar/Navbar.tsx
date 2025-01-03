@@ -1,9 +1,9 @@
-import { Menu, Search, UserCircle } from "lucide-react";
+import { Menu, Search } from "lucide-react";
+import { UserButton } from "@clerk/nextjs";
 import { Input } from "@/components/ui/input";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { SidebarRoutes } from "../SidebarRoutes";
 import { ToggleTheme } from "../ToggleTheme";
-
 export const Navbar = () => {
   return (
     <nav className="flex items-center px-2 gap-x-4 md:px-6 justify-between w-full bg-background border-b h-20">
@@ -23,7 +23,7 @@ export const Navbar = () => {
       </div>
       <div className="flex gap-x-2 items-center">
         <ToggleTheme />
-        <UserCircle strokeWidth={1} className="w-4 h-4" />
+        <UserButton />
       </div>
     </nav>
   );
